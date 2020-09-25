@@ -1,5 +1,36 @@
-button {
-  background-image: linear-gradient(to bottom right, 10%, #9356DC, #FF79DA);
+footer {
+    width: 100%;
+    position: absolute;
+    background-color: #333030;
+    bottom: 0;
 }
+
+footer p {
+    font-family: Shrikhand, sans-serif;
+    color: #fff;
+    padding-left: 15px;
+}
+
+footer .logo {
+    width: 30%;
+    padding-top: 15px;
+    padding-left: 15px;
+    color: #fff;
+}
+
+header {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+header .logo {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /*# sourceMappingURL=styles.css.map */
