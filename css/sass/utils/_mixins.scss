@@ -1,5 +1,6 @@
-@mixin hover-lighten {
+@mixin hover-lighten-btn {
     &:hover {
-        color: lighten(color, 10%);
+        $color-primary: lighten($color-primary, 10%);
+        $color-secondary: lighten($color-secondary, 10%)
     }
 }
