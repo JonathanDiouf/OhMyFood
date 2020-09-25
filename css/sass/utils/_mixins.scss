@@ -4,3 +4,8 @@
         $color-secondary: lighten($color-secondary, 10%)
     }
 }
+
+@mixin align-text-center {
+    display: block;
+    text-align: center;
+}

@@ -1,36 +1,65 @@
+button {
+  background-image: linear-gradient(to bottom right, 10%, #9356DC, #FF79DA);
+}
 footer {
-    width: 100%;
-    position: absolute;
-    background-color: #333030;
-    bottom: 0;
+  width: 100%;
+  position: absolute;
+  background-color: #333030;
+  bottom: 0;
 }
-
 footer p {
-    font-family: Shrikhand, sans-serif;
-    color: #fff;
-    padding-left: 15px;
+  font-family: Shrikhand, sans-serif;
+  color: #fff;
+  padding-left: 15px;
 }
-
 footer .logo {
-    width: 30%;
-    padding-top: 15px;
-    padding-left: 15px;
-    color: #fff;
+  width: 30%;
+  padding-top: 15px;
+  padding-left: 15px;
+  color: #fff;
 }
 
 header {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    color: #fff;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  color: #fff;
 }
-
 header .logo {
-    display: block;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.location {
+  display: block;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+.location h2 {
+  font-family: Roboto;
+  font-size: 15px;
+  background-color: #C7BDBD;
+  margin: 0px;
+  padding: 10px 0px 10px;
+}
+
+.pres {
+  display: block;
+  text-align: center;
+  background-color: #E3E0E0;
+  margin: 0px;
+  padding: 0px;
+}
+.pres h1 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin: 0px;
+}
+.pres button {
+  margin: 15px 0px 40px;
+}
 
 /*# sourceMappingURL=styles.css.map */
