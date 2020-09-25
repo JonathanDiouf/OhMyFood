@@ -1,0 +1,5 @@
+@mixin hover-lighten {
+    &:hover {
+        color: lighten(color, 10%);
+    }
+}
