@@ -1,0 +1,11 @@
+@mixin hover-lighten-btn {
+    &:hover {
+        $color-primary: lighten($color-primary, 10%);
+        $color-secondary: lighten($color-secondary, 10%)
+    }
+}
+
+@mixin align-text-center {
+    display: block;
+    text-align: center;
+}

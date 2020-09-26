@@ -1,3 +1,6 @@
+button {
+  background-image: linear-gradient(to bottom right, 10%, #9356DC, #FF79DA);
+}
 footer {
   width: 100%;
   position: absolute;
@@ -27,6 +30,36 @@ header .logo {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.location {
+  display: block;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+.location h2 {
+  font-family: Roboto;
+  font-size: 15px;
+  background-color: #C7BDBD;
+  margin: 0px;
+  padding: 10px 0px 10px;
+}
+
+.pres {
+  display: block;
+  text-align: center;
+  background-color: #E3E0E0;
+  margin: 0px;
+  padding: 0px;
+}
+.pres h1 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin: 0px;
+}
+.pres button {
+  margin: 15px 0px 40px;
 }
 
 /*# sourceMappingURL=styles.css.map */
