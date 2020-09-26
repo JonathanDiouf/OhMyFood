@@ -1,4 +1,17 @@
-button {
-    background-image: linear-gradient(to bottom right, 10%, $color-primary, $color-secondary);
-    @include hover-lighten-btn;
-}
+    .btn {
+        @include gradient-btn;
+        padding: 10px 20px 10px;
+        border-radius: 100px;
+        cursor: pointer;
+        border-style: hidden;
+        transition: transform 200ms;
+        color: #fff;
+        &:hover {
+            @include gradient-btn($color-secondary-light, $color-primary-light)
+        }
+        &:focus {
+            outline: 0;
+            outline-style: hidden;
+            outline-width: 0px;
+        }
+    }

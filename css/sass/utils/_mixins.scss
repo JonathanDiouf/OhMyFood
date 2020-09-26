@@ -1,8 +1,5 @@
-@mixin hover-lighten-btn {
-    &:hover {
-        $color-primary: lighten($color-primary, 10%);
-        $color-secondary: lighten($color-secondary, 10%)
-    }
+@mixin gradient-btn($color1: $color-secondary, $color2: $color-primary) {
+    background-image: linear-gradient(to bottom right, $color1, $color2);
 }
 
 @mixin align-text-center {

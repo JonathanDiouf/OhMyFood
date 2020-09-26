@@ -1,5 +1,7 @@
 $color-primary: #9356DC;
+$color-primary-light: lighten($color-primary, 10%);
 $color-secondary: #FF79DA;
+$color-secondary-light: lighten($color-secondary, 10%);
 $color-tertiary: #99E2D0;
-$police-text: Roboto;
-$police-title: Shrikhand;
+$police-text: "Roboto";
+$police-title: "Shrikhand";
