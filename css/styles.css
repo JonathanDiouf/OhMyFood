@@ -1,6 +1,28 @@
-button {
-  background-image: linear-gradient(to bottom right, 10%, #9356DC, #FF79DA);
+h2,
+h1,
+p {
+  font-size: 20px;
+  font-family: "Roboto";
 }
+
+.btn {
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  padding: 10px 20px 10px;
+  border-radius: 100px;
+  cursor: pointer;
+  border-style: hidden;
+  transition: transform 200ms;
+  color: #fff;
+}
+.btn:hover {
+  background-image: linear-gradient(to bottom right, #fface8, #ae80e5);
+}
+.btn:focus {
+  outline: 0;
+  outline-style: hidden;
+  outline-width: 0px;
+}
+
 footer {
   width: 100%;
   position: absolute;
@@ -39,7 +61,7 @@ header .logo {
   padding: 0px;
 }
 .location h2 {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 15px;
   background-color: #C7BDBD;
   margin: 0px;
