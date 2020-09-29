@@ -27,3 +27,42 @@
         margin: 15px 0px 40px;
     }
 }
+
+.guide {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    &__title {
+        padding-left: 10px;
+    }
+    & ul {
+        padding-inline-start: 0px;
+    }
+    & li {
+        display: flex;
+        justify-content: flex-start;
+    }
+    & h2 {
+        background-color: #E3E0E0;
+        border: 0px;
+        border-radius: 20px;
+        margin: 16px 0px;
+        padding: 25px 35px 25px 10px;
+    }
+    & p {
+        margin-right: -5px;
+        z-index: 2;
+        padding: 3px;
+        border-radius: 100px;
+        background-color: $color-primary;
+    }
+    & .fa-mobile {
+        font-size: 15px;
+    }
+    & .fa-list-alt {
+        font-size: 15px;
+    }
+    & .fa-building {
+        font-size: 15px;
+    }
+}
