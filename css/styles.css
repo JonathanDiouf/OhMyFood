@@ -1,3 +1,4 @@
+@import "../../node_modules/@fortawesome/fontawesome-free/css/all.css";
 h2,
 h1,
 p {
@@ -115,21 +116,31 @@ header .logo {
   margin: 16px 0px;
   padding: 25px 35px 25px 10px;
 }
-.guide p {
+.guide span {
+  /*display: inline-block;
+  vertical-align: middle;*/
   margin-right: -5px;
   z-index: 2;
   padding: 3px;
-  border-radius: 100px;
+  border-radius: 50%;
   background-color: #9356DC;
+  height: 25px;
+  width: 25px;
+  text-align: center;
+  color: #fff;
+  margin-top: 20px;
+  line-height: 25px;
+  font-family: "Roboto";
 }
 .guide .fa-mobile {
-  font-size: 15px;
+  font-size: 20px;
 }
 .guide .fa-list-alt {
   font-size: 15px;
 }
 .guide .fa-building {
   font-size: 15px;
+  color: #9356DC;
 }
 
 /*# sourceMappingURL=styles.css.map */
