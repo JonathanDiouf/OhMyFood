@@ -27,3 +27,34 @@
         margin: 15px 0px 40px;
     }
 }
+
+.restaurants {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    font-family: $police-text;
+    &__cards {
+        margin-right: 30px;
+        margin-left: 30px;
+        box-shadow: 0px 5px 10px 0px;
+        border-radius: 15px;
+        overflow: hidden;
+        & .__img {
+            & img {
+                height: auto;
+                width: 100%;
+            }
+            & figure {
+                height: 223px;
+                width: 100%;
+                display: block;
+                overflow: hidden;
+                & img {
+                    width: 100%;
+                    height: auto;
+                    margin-right: 50px;
+                }
+            }
+        }
+    }
+}
