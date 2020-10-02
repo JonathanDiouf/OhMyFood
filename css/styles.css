@@ -91,21 +91,54 @@ header .logo {
   font-family: "Roboto";
 }
 .restaurants__cards {
-  margin: 10px 15px;
+  margin: 15px 15px;
   box-shadow: 0px 5px 10px 0px;
   border-radius: 15px;
   overflow: hidden;
 }
-.restaurants__cards .__img img {
-  height: 200px;
+.restaurants__cards .__pal {
+  background-image: url("../ressources/img/thefull.jpg");
+  background-size: 350px 200px;
+  background-position: center;
   width: 100%;
-  object-fit: cover;
+  height: 200px;
 }
-.restaurants__cards .__img h3 {
-  margin-right: -1%;
-  margin-top: -1%;
+.restaurants__cards .__enchant {
+  background-image: url("../ressources/img/enchanted.jpg");
+  background-size: 350px 350px;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+}
+.restaurants__cards .__barquette {
+  background-image: url("../ressources/img/barquette.jpg");
+  background-size: 350px 200px;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+}
+.restaurants__cards .__gourmand {
+  background-image: url("../ressources/img/gourmand.jpg");
+  background-size: 350px 200px;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+}
+.restaurants__cards h3 {
+  position: relative;
+  margin: 10px 20px;
+  padding: 5px 20px;
+  font-size: 15px;
+  color: #205523;
+  background-color: #7ef1aa;
   float: right;
-  z-index: 2;
+}
+.restaurants__cards h2 {
+  margin: 10px 0px 5px 10px;
+}
+.restaurants__cards p {
+  margin: 0px 10px 10px;
+  padding: 0px;
 }
 
 /*# sourceMappingURL=styles.css.map */
