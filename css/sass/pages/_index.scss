@@ -34,26 +34,21 @@
     margin: 0px;
     font-family: $police-text;
     &__cards {
-        margin-right: 30px;
-        margin-left: 30px;
+        margin: 10px 15px;
         box-shadow: 0px 5px 10px 0px;
         border-radius: 15px;
         overflow: hidden;
         & .__img {
             & img {
-                height: auto;
+                height: 200px;
                 width: 100%;
+                object-fit: cover;
             }
-            & figure {
-                height: 223px;
-                width: 100%;
-                display: block;
-                overflow: hidden;
-                & img {
-                    width: 100%;
-                    height: auto;
-                    margin-right: 50px;
-                }
+            & h3 {
+                margin-right: -1%;
+                margin-top: -1%;
+                float: right;
+                z-index: 2;
             }
         }
     }

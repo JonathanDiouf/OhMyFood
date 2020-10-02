@@ -91,26 +91,21 @@ header .logo {
   font-family: "Roboto";
 }
 .restaurants__cards {
-  margin-right: 30px;
-  margin-left: 30px;
+  margin: 10px 15px;
   box-shadow: 0px 5px 10px 0px;
   border-radius: 15px;
   overflow: hidden;
 }
 .restaurants__cards .__img img {
-  height: auto;
+  height: 200px;
   width: 100%;
+  object-fit: cover;
 }
-.restaurants__cards .__img figure {
-  height: 223px;
-  width: 100%;
-  display: block;
-  overflow: hidden;
-}
-.restaurants__cards .__img figure img {
-  width: 100%;
-  height: auto;
-  margin-right: 50px;
+.restaurants__cards .__img h3 {
+  margin-right: -1%;
+  margin-top: -1%;
+  float: right;
+  z-index: 2;
 }
 
 /*# sourceMappingURL=styles.css.map */
