@@ -46,8 +46,16 @@
         background-color: #E3E0E0;
         border: 0px;
         border-radius: 20px;
+        width: 75%;
         margin: 16px 0px;
         padding: 25px 35px 25px 10px;
+        line-height: 25px;
+        &:hover {
+            background-color: #efc3f5;
+            i {
+                color: $color-primary;
+            }
+        }
     }
     & span {
         /*display: inline-block;
@@ -61,7 +69,7 @@
         width: 25px;
         text-align: center;
         color: #fff;
-        margin-top: 20px;
+        margin-top: 37px;
         line-height: 25px;
         font-family: $police-text;
     }
@@ -73,6 +81,5 @@
     }
     & .fa-building {
         font-size: 15px;
-        color: $color-primary;
     }
 }
