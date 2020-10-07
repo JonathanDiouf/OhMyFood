@@ -1,12 +1,18 @@
-header {
+.intro {
     width: 100%;
-    padding: 0;
-    margin: 0;
-    color: #fff;
+    display: flex;
+    flex-direction: row;
+    i {
+        margin-top: 5px;
+        margin-left: 10px;
+        &::before {
+            font-size: 20px;
+            color: #000;
+        }
+    }
     .logo {
-        display: block;
         width: 50%;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 20%;
+        margin-right: 20%;
     }
 }
