@@ -151,19 +151,28 @@ header .logo {
 .restaurants__description .heart {
   width: 30%;
 }
-.restaurants__description .heart i {
+.restaurants__description .heart .fa-heart-o {
   position: relative;
   top: calc(50% - 10px);
   left: calc(50% - 10px);
+}
+.restaurants__description .heart .fa-heart {
+  transform: scaleY(0);
+}
+.restaurants__description .heart:hover .fa-heart-o {
+  display: none;
+}
+.restaurants__description .heart:hover .fa-heart {
+  transition: transform 3000ms;
   transform: scaleY(1);
-  border: 1px solid purple;
-}
-.restaurants__description .heart i:hover {
-  transform: scaleY(2);
   transform-origin: bottom;
-  transition: transform 1000ms;
+  color: #9356DC;
+  display: inline;
+  position: relative;
+  top: calc(50% - 10px);
+  left: calc(50% - 10px);
 }
-.restaurants__description .fa {
+.restaurants__description .heart .fa {
   font-size: 30px;
 }
 
