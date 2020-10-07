@@ -7,7 +7,7 @@
         transition: transform 200ms;
         color: #fff;
         &:hover {
-            @include gradient-btn($color-secondary-light, $color-primary-light)
+            @include gradient-btn($color-secondary-light, $color-primary-light);
         }
         &:focus {
             outline: 0;
