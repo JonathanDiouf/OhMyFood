@@ -140,5 +140,31 @@ header .logo {
   margin: 0px 10px 10px;
   padding: 0px;
 }
+.restaurants__description {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.restaurants__description .text {
+  width: 70%;
+}
+.restaurants__description .heart {
+  width: 30%;
+}
+.restaurants__description .heart i {
+  position: relative;
+  top: calc(50% - 10px);
+  left: calc(50% - 10px);
+  transform: scaleY(1);
+  border: 1px solid purple;
+}
+.restaurants__description .heart i:hover {
+  transform: scaleY(2);
+  transform-origin: bottom;
+  transition: transform 1000ms;
+}
+.restaurants__description .fa {
+  font-size: 30px;
+}
 
 /*# sourceMappingURL=styles.css.map */

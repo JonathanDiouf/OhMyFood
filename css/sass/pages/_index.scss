@@ -67,4 +67,30 @@
             padding: 0px;
         }
     }
+    &__description {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        & .text {
+            width: 70%;
+        }
+        & .heart {
+            width: 30%;
+            i {
+                position: relative;
+                top: calc(50% - 10px);
+                left: calc(50% - 10px);
+                transform: scaleY(1);
+                border: 1px solid purple;
+                &:hover {
+                    transform: scaleY(2);
+                    transform-origin: bottom;
+                    transition: transform 1000ms;
+                }
+            }
+        }
+        .fa {
+            font-size: 30px;
+        }
+    }
 }
