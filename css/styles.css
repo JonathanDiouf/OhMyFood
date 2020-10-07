@@ -41,13 +41,32 @@ footer .logo {
   color: #fff;
 }
 
-header {
+.intro {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.intro i {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.intro i::before {
+  font-size: 20px;
+  color: #000;
+}
+.intro .logo {
+  width: 50%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.home {
   width: 100%;
   padding: 0;
   margin: 0;
   color: #fff;
 }
-header .logo {
+.home .logo {
   display: block;
   width: 50%;
   margin-left: auto;
@@ -174,6 +193,10 @@ header .logo {
 }
 .restaurants__description .heart .fa {
   font-size: 30px;
+}
+
+.fa {
+  z-index: 2;
 }
 
 /*# sourceMappingURL=styles.css.map */
