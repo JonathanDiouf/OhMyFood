@@ -1,0 +1,91 @@
+    .fa {
+        z-index: 2;
+    }
+    
+    .img_head {
+        width: 100%;
+        overflow: hidden;
+        z-index: -2;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    
+    .main {
+        width: 100%;
+        background-color: #e9e9e9;
+        position: absolute;
+        margin-top: -45px;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        .head,
+        .menu {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .head {
+            padding-top: 15px;
+            height: 60px;
+            h1 {
+                font-family: $police-title;
+                font-weight: normal;
+                font-size: 25px;
+                float: left;
+            }
+            i {
+                float: right;
+                padding: 25px 20px 0px 0px;
+                font-size: 25px;
+            }
+        }
+        .menu {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            h2 {
+                text-transform: uppercase;
+                padding-left: 10px;
+                font-weight: normal;
+                span {
+                    padding-bottom: 4px;
+                    border-bottom: 2px solid $color-tertiary;
+                }
+            }
+            article {
+                width: 95%;
+                background-color: #fff;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: row;
+                margin: 5px 0px;
+                .text {
+                    width: 80%;
+                    h3 {
+                        font: {
+                            family: $police-text;
+                            weight: bold;
+                            size: 17px;
+                        }
+                        padding-left: 10px;
+                        margin-bottom: 5px;
+                    }
+                    p {
+                        padding-left: 10px;
+                        margin-top: 5px;
+                        margin-bottom: 5px;
+                    }
+                }
+                .price {
+                    width: 20%;
+                    p {
+                        margin: 40px 0px 5px 30px;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        .endmenu {
+            @include align-text-center;
+        }
+    }
