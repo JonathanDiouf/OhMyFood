@@ -1,6 +1,5 @@
     .btn {
         @include gradient-btn;
-        padding: 10px 20px 10px;
         border-radius: 100px;
         cursor: pointer;
         border-style: hidden;
@@ -14,4 +13,15 @@
             outline-style: hidden;
             outline-width: 0px;
         }
+    }
+    
+    .btn-home {
+        padding: 10px 20px 10px;
+    }
+    
+    .btn-menu {
+        width: 50%;
+        font-size: 17px;
+        margin: 50px 0px 50px;
+        padding: 13px 20px;
     }
