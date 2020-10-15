@@ -149,7 +149,11 @@
                 left: calc(50% - 10px);
             }
             .fa-heart {
-                transform: scaleY(0);
+                transition: transform 3000ms;
+                transform: scale(2);
+                top: calc(50% - 10px);
+                left: calc(50% - 10px);
+                color: $color-primary;
             }
             &:hover {
                 .fa-heart-o {
@@ -157,9 +161,7 @@
                 }
                 .fa-heart {
                     transition: transform 3000ms;
-                    transform: scaleY(1);
-                    transform-origin: bottom;
-                    color: $color-primary;
+                    transform: scale(0);
                     display: inline;
                     position: relative;
                     top: calc(50% - 10px);

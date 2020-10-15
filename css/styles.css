@@ -256,16 +256,18 @@ footer .logo {
   left: calc(50% - 10px);
 }
 .restaurants__description .heart .fa-heart {
-  transform: scaleY(0);
+  transition: transform 3000ms;
+  transform: scale(2);
+  top: calc(50% - 10px);
+  left: calc(50% - 10px);
+  color: #9356DC;
 }
 .restaurants__description .heart:hover .fa-heart-o {
   display: none;
 }
 .restaurants__description .heart:hover .fa-heart {
   transition: transform 3000ms;
-  transform: scaleY(1);
-  transform-origin: bottom;
-  color: #9356DC;
+  transform: scale(0);
   display: inline;
   position: relative;
   top: calc(50% - 10px);
