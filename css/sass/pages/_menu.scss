@@ -2,7 +2,46 @@
         z-index: 2;
     }
     
-    .img_head {
+    .box {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .img_full {
+        @include bck-img('../ressources/img/thefull');
+        width: 100%;
+        overflow: hidden;
+        z-index: -2;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    
+    .img_enchant {
+        @include bck-img('../ressources/img/enchanted');
+        width: 100%;
+        overflow: hidden;
+        z-index: -2;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    
+    .img_barquette {
+        @include bck-img('../ressources/img/barquette');
+        width: 100%;
+        overflow: hidden;
+        z-index: -2;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    
+    .img_gourmand {
+        @include bck-img('../ressources/img/gourmand');
         width: 100%;
         overflow: hidden;
         z-index: -2;
@@ -15,12 +54,10 @@
     .main {
         width: 100%;
         background-color: #e9e9e9;
-        position: absolute;
         margin-top: -45px;
         border-top-left-radius: 50px;
         border-top-right-radius: 50px;
-        .head,
-        .menu {
+        .head {
             margin-left: 10px;
             margin-right: 10px;
         }
@@ -44,6 +81,7 @@
             display: flex;
             flex-direction: column;
             h2 {
+                width: 90%;
                 text-transform: uppercase;
                 padding-left: 10px;
                 font-weight: normal;

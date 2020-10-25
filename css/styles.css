@@ -51,9 +51,7 @@ h2 {
 
 footer {
   width: 100%;
-  position: relative;
   background-color: #333030;
-  bottom: 0;
 }
 footer p {
   font-family: sans-serif;
@@ -281,12 +279,67 @@ footer .logo {
   z-index: 2;
 }
 
-.img_head {
+.box {
+  display: flex;
+  flex-direction: column;
+}
+
+.img_full {
+  background-image: url("../ressources/img/thefull.jpg");
+  background-size: 350px 200px;
+  background-position: center;
+  width: 100%;
+  height: 200px;
   width: 100%;
   overflow: hidden;
   z-index: -2;
 }
-.img_head img {
+.img_full img {
+  width: 100%;
+  height: auto;
+}
+
+.img_enchant {
+  background-image: url("../ressources/img/enchanted.jpg");
+  background-size: 350px 200px;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+  z-index: -2;
+}
+.img_enchant img {
+  width: 100%;
+  height: auto;
+}
+
+.img_barquette {
+  background-image: url("../ressources/img/barquette.jpg");
+  background-size: 350px 200px;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+  z-index: -2;
+}
+.img_barquette img {
+  width: 100%;
+  height: auto;
+}
+
+.img_gourmand {
+  background-image: url("../ressources/img/gourmand.jpg");
+  background-size: 350px 200px;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+  z-index: -2;
+}
+.img_gourmand img {
   width: 100%;
   height: auto;
 }
@@ -294,13 +347,11 @@ footer .logo {
 .main {
   width: 100%;
   background-color: #e9e9e9;
-  position: absolute;
   margin-top: -45px;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
 }
-.main .head,
-.main .menu {
+.main .head {
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -325,6 +376,7 @@ footer .logo {
   flex-direction: column;
 }
 .main .menu h2 {
+  width: 90%;
   text-transform: uppercase;
   padding-left: 10px;
   font-weight: normal;
