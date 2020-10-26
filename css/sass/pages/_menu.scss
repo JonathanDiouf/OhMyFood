@@ -121,26 +121,34 @@
                     flex-direction: row;
                     justify-content: space-between;
                     p {
-                        margin: 40px 0px 5px 0px;
+                        margin: 40px 0px 5px 30px;
                         font-weight: bold;
+                        transform: translateX(0px);
+                        transition: transform .3s;
                     }
                     div {
+                        width: 150px;
                         margin: auto;
                         transform: translateX(200px);
+                        transition: transform .3s;
                         .fa {
                             margin-top: 25px;
                             margin-left: 15px;
+                            margin-right: 50px;
+                            color: #fff;
+                            font-size: 20px;
                         }
                     }
                 }
-                &:focus {
+                &:active {
                     .price {
+                        p {
+                            transform: translateX(-50px);
+                        }
                         div {
-                            width: 60%;
                             height: 100%;
                             background-color: #7ef1aa;
-                            transition: transform .3s;
-                            transform: translateX(0px);
+                            transform: translateX(-35px);
                         }
                     }
                 }
