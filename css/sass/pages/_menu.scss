@@ -97,6 +97,7 @@
                 display: flex;
                 flex-direction: row;
                 margin: 5px 0px;
+                overflow: hidden;
                 .text {
                     width: 80%;
                     h3 {
@@ -116,9 +117,31 @@
                 }
                 .price {
                     width: 20%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
                     p {
-                        margin: 40px 0px 5px 30px;
+                        margin: 40px 0px 5px 0px;
                         font-weight: bold;
+                    }
+                    div {
+                        margin: auto;
+                        transform: translateX(200px);
+                        .fa {
+                            margin-top: 25px;
+                            margin-left: 15px;
+                        }
+                    }
+                }
+                &:focus {
+                    .price {
+                        div {
+                            width: 60%;
+                            height: 100%;
+                            background-color: #7ef1aa;
+                            transition: transform .3s;
+                            transform: translateX(0px);
+                        }
                     }
                 }
             }

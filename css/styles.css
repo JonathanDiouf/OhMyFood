@@ -470,6 +470,7 @@ footer .logo {
   display: flex;
   flex-direction: row;
   margin: 5px 0px;
+  overflow: hidden;
 }
 .main .menu article .text {
   width: 80%;
@@ -488,10 +489,28 @@ footer .logo {
 }
 .main .menu article .price {
   width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .main .menu article .price p {
-  margin: 40px 0px 5px 30px;
+  margin: 40px 0px 5px 0px;
   font-weight: bold;
+}
+.main .menu article .price div {
+  margin: auto;
+  transform: translateX(200px);
+}
+.main .menu article .price div .fa {
+  margin-top: 25px;
+  margin-left: 15px;
+}
+.main .menu article:focus .price div {
+  width: 60%;
+  height: 100%;
+  background-color: #7ef1aa;
+  transition: transform 0.3s;
+  transform: translateX(0px);
 }
 .main .endmenu {
   display: block;
