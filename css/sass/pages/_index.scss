@@ -100,9 +100,17 @@
     padding: 0px;
     margin: 0px;
     font-family: $police-text;
+    a {
+        text-decoration: none;
+        h2,
+        p,
+        i {
+            color: #000;
+        }
+    }
     &__cards {
         margin: 15px 15px;
-        box-shadow: 0px 5px 10px 0px;
+        box-shadow: 0px 5px 10px 0px #000;
         border-radius: 15px;
         overflow: hidden;
         & .__pal {
@@ -172,5 +180,73 @@
                 font-size: 30px;
             }
         }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .logo {
+        margin-left: 0px;
+        margin-right: 0px;
+        text-align: left;
+    }
+    .container {
+        display: flex;
+        flex-direction: row;
+        div {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            .location {
+                padding-top: 20px;
+            }
+            .pres {
+                button {
+                    margin-top: 80px;
+                    font-size: 20px;
+                }
+                h1 {
+                    padding-top: 20px;
+                    font-size: 30px;
+                }
+                p {
+                    padding-top: 10px;
+                    margin-bottom: 20px;
+                    font-size: 20px;
+                }
+            }
+        }
+        .guide {
+            width: 50%;
+            &__title {
+                text-align: center;
+                font-size: 30px;
+                margin-right: 40px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .restaurants h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+    .boxmenu1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .boxmenu2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .restaurants__cards {
+        width: 350px;
+        height: auto;
+        /*.__pal {
+            background-repeat: no-repeat;
+            width: 100%;
+        }*/
     }
 }

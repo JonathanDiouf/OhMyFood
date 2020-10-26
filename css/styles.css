@@ -51,9 +51,7 @@ h2 {
 
 footer {
   width: 100%;
-  position: relative;
   background-color: #333030;
-  bottom: 0;
 }
 footer p {
   font-family: sans-serif;
@@ -189,9 +187,17 @@ footer .logo {
   margin: 0px;
   font-family: "Roboto";
 }
+.restaurants a {
+  text-decoration: none;
+}
+.restaurants a h2,
+.restaurants a p,
+.restaurants a i {
+  color: #000;
+}
 .restaurants__cards {
   margin: 15px 15px;
-  box-shadow: 0px 5px 10px 0px;
+  box-shadow: 0px 5px 10px 0px #000;
   border-radius: 15px;
   overflow: hidden;
 }
@@ -277,16 +283,141 @@ footer .logo {
   font-size: 30px;
 }
 
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: left;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+  .container div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  .container div .location {
+    padding-top: 20px;
+  }
+  .container div .pres button {
+    margin-top: 80px;
+    font-size: 20px;
+  }
+  .container div .pres h1 {
+    padding-top: 20px;
+    font-size: 30px;
+  }
+  .container div .pres p {
+    padding-top: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  .container .guide {
+    width: 50%;
+  }
+  .container .guide__title {
+    text-align: center;
+    font-size: 30px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+  }
+
+  .restaurants h1 {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .boxmenu1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .boxmenu2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .restaurants__cards {
+    width: 350px;
+    height: auto;
+    /*.__pal {
+        background-repeat: no-repeat;
+        width: 100%;
+    }*/
+  }
+}
 .fa {
   z-index: 2;
 }
 
-.img_head {
+.box {
+  display: flex;
+  flex-direction: column;
+}
+
+.img_full {
+  background-image: url("../ressources/img/thefull.jpg");
+  background-size: 350px 200px;
+  background-position: center;
+  width: 100%;
+  height: 200px;
   width: 100%;
   overflow: hidden;
   z-index: -2;
 }
-.img_head img {
+.img_full img {
+  width: 100%;
+  height: auto;
+}
+
+.img_enchant {
+  background-image: url("../ressources/img/enchanted.jpg");
+  background-size: 350px 200px;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+  z-index: -2;
+}
+.img_enchant img {
+  width: 100%;
+  height: auto;
+}
+
+.img_barquette {
+  background-image: url("../ressources/img/barquette.jpg");
+  background-size: 350px 200px;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+  z-index: -2;
+}
+.img_barquette img {
+  width: 100%;
+  height: auto;
+}
+
+.img_gourmand {
+  background-image: url("../ressources/img/gourmand.jpg");
+  background-size: 350px 200px;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+  z-index: -2;
+}
+.img_gourmand img {
   width: 100%;
   height: auto;
 }
@@ -294,13 +425,11 @@ footer .logo {
 .main {
   width: 100%;
   background-color: #e9e9e9;
-  position: absolute;
   margin-top: -45px;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
 }
-.main .head,
-.main .menu {
+.main .head {
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -325,6 +454,7 @@ footer .logo {
   flex-direction: column;
 }
 .main .menu h2 {
+  width: 90%;
   text-transform: uppercase;
   padding-left: 10px;
   font-weight: normal;
