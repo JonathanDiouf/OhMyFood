@@ -51,6 +51,18 @@
         }
     }
     
+    .AA {
+        animation: entryLeftToRight 1s;
+    }
+    
+    .AB {
+        animation: entryLeftToRight 2s;
+    }
+    
+    .AC {
+        animation: entryLeftToRight 3s;
+    }
+    
     .main {
         width: 100%;
         background-color: #e9e9e9;
@@ -140,7 +152,16 @@
                         }
                     }
                 }
-                &:active {
+                &:hover {
+                    .text {
+                        .content {
+                            font-size: 0px;
+                            &::after {
+                                content: "with delicately sliced...";
+                                font-size: initial;
+                            }
+                        }
+                    }
                     .price {
                         p {
                             transform: translateX(-50px);

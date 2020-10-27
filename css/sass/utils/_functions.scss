@@ -1,0 +1,10 @@
+@keyframes entryLeftToRight {
+    from {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}

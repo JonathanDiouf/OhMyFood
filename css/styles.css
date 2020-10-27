@@ -1,4 +1,14 @@
 @import "../../node_modules/@fortawesome/fontawesome-free/css/all.css";
+@keyframes entryLeftToRight {
+  from {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
 html,
 body {
   margin: 0;
@@ -422,6 +432,18 @@ footer .logo {
   height: auto;
 }
 
+.AA {
+  animation: entryLeftToRight 1s;
+}
+
+.AB {
+  animation: entryLeftToRight 2s;
+}
+
+.AC {
+  animation: entryLeftToRight 3s;
+}
+
 .main {
   width: 100%;
   background-color: #e9e9e9;
@@ -512,10 +534,17 @@ footer .logo {
   color: #fff;
   font-size: 20px;
 }
-.main .menu article:active .price p {
+.main .menu article:hover .text .content {
+  font-size: 0px;
+}
+.main .menu article:hover .text .content::after {
+  content: "with delicately sliced...";
+  font-size: initial;
+}
+.main .menu article:hover .price p {
   transform: translateX(-50px);
 }
-.main .menu article:active .price div {
+.main .menu article:hover .price div {
   height: 100%;
   background-color: #7ef1aa;
   transform: translateX(-35px);
