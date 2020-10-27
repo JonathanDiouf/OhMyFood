@@ -452,12 +452,30 @@ footer .logo {
   border-top-right-radius: 50px;
 }
 .main .head {
+  padding-top: 15px;
+  height: 60px;
   margin-left: 10px;
   margin-right: 10px;
 }
-.main .head {
-  padding-top: 15px;
-  height: 60px;
+.main .head .coeur {
+  background-color: #e9e9e9;
+  z-index: 1;
+}
+.main .head .coeur .fa-heart-o {
+  color: #9356DC;
+  position: relative;
+  z-index: 1000;
+}
+.main .head .coeur .fa-heart {
+  z-index: 10;
+  position: absolute;
+  top: 202px;
+  left: 320px;
+  color: #e9e9e9;
+  transition: color 1s;
+}
+.main .head .coeur:hover .fa-heart {
+  color: #9356DC;
 }
 .main .head h1 {
   font-family: "Shrikhand";

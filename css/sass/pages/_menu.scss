@@ -70,12 +70,31 @@
         border-top-left-radius: 50px;
         border-top-right-radius: 50px;
         .head {
-            margin-left: 10px;
-            margin-right: 10px;
-        }
-        .head {
             padding-top: 15px;
             height: 60px;
+            margin-left: 10px;
+            margin-right: 10px;
+            .coeur {
+                @include coeur;
+                .fa-heart-o {
+                    color: $color-primary;
+                    position: relative;
+                    z-index: 1000;
+                }
+                .fa-heart {
+                    z-index: 10;
+                    position: absolute;
+                    top: 202px;
+                    left: 320px;
+                    color: #e9e9e9;
+                    transition: color 1s;
+                }
+                &:hover {
+                    .fa-heart {
+                        color: $color-primary;
+                    }
+                }
+            }
             h1 {
                 font-family: $police-title;
                 font-weight: normal;
