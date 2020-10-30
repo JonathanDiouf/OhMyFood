@@ -69,6 +69,7 @@ footer .logo {
   width: 100%;
   display: flex;
   flex-direction: row;
+  text-align: center;
 }
 .intro i {
   margin-top: 5px;
@@ -79,7 +80,8 @@ footer .logo {
   color: #000;
 }
 .intro .logo {
-  width: 50%;
+  font-size: 10px;
+  color: #fff;
   margin-left: 20%;
   margin-right: 20%;
 }
@@ -357,11 +359,6 @@ footer .logo {
   z-index: 2;
 }
 
-.box {
-  display: flex;
-  flex-direction: column;
-}
-
 .img_full {
   background-image: url("../ressources/img/thefull.jpg");
   background-size: 350px 200px;
@@ -496,6 +493,82 @@ footer .logo {
 .main .endmenu {
   display: block;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .intro {
+    background: transparent;
+    margin-bottom: 400px;
+  }
+
+  .img_full {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    height: 500px;
+    opacity: 0.9;
+    background-position-y: -200px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .img_enchant {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    height: 500px;
+    opacity: 0.9;
+    background-position-y: -650px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .img_barquette {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    height: 500px;
+    opacity: 0.9;
+    background-position-y: -200px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .img_gourmand {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    height: 500px;
+    opacity: 0.9;
+    background-position-y: -200px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .intro .logo {
+    top: 0px;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 35%;
+    font-size: 50px;
+    font-family: "Shrikhand";
+    font-weight: normal;
+    background: transparent;
+    color: #9356DC;
+  }
+
+  .btn-menu {
+    padding: 10px 20px;
+    width: 20%;
+  }
+
+  .intro .fa-arrow-left::before {
+    font-size: 40px;
+  }
+
+  .price {
+    margin-left: 70px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
