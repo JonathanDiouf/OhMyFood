@@ -2,11 +2,6 @@
         z-index: 2;
     }
     
-    .box {
-        display: flex;
-        flex-direction: column;
-    }
-    
     .img_full {
         @include bck-img('../ressources/img/thefull');
         width: 100%;
@@ -125,5 +120,45 @@
         }
         .endmenu {
             @include align-text-center;
+        }
+    }
+    
+    @media screen and (min-width: 1200px) {
+        .intro {
+            background: transparent;
+            margin-bottom: 400px;
+        }
+        .img_full {
+            @include bck-img-desk;
+        }
+        .img_enchant {
+            @include bck-img-desk(-650px)
+        }
+        .img_barquette {
+            @include bck-img-desk;
+        }
+        .img_gourmand {
+            @include bck-img-desk;
+        }
+        .intro .logo {
+            top: 0px;
+            position: absolute;
+            margin-top: 0px;
+            margin-left: 35%;
+            font-size: 50px;
+            font-family: $police-title;
+            font-weight: normal;
+            background: transparent;
+            color: $color-primary;
+        }
+        .btn-menu {
+            padding: 10px 20px;
+            width: 20%;
+        }
+        .intro .fa-arrow-left::before {
+            font-size: 40px;
+        }
+        .price {
+            margin-left: 70px;
         }
     }

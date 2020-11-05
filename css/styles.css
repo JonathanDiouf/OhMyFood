@@ -69,6 +69,7 @@ footer .logo {
   width: 100%;
   display: flex;
   flex-direction: row;
+  text-align: center;
 }
 .intro i {
   margin-top: 5px;
@@ -79,7 +80,8 @@ footer .logo {
   color: #000;
 }
 .intro .logo {
-  width: 50%;
+  font-size: 10px;
+  color: #fff;
   margin-left: 20%;
   margin-right: 20%;
 }
@@ -284,82 +286,116 @@ footer .logo {
 }
 
 @media screen and (min-width: 1200px) {
-  .logo {
-    margin-left: 0px;
-    margin-right: 0px;
-    text-align: left;
-  }
-
-  .container {
-    display: flex;
-    flex-direction: row;
-  }
-  .container div {
-    width: 50%;
+  body {
     display: flex;
     flex-direction: column;
   }
-  .container div .location {
-    padding-top: 20px;
-  }
-  .container div .pres button {
-    margin-top: 80px;
-    font-size: 20px;
-  }
-  .container div .pres h1 {
-    padding-top: 20px;
-    font-size: 30px;
-  }
-  .container div .pres p {
-    padding-top: 10px;
-    margin-bottom: 20px;
-    font-size: 20px;
-  }
-  .container .guide {
-    width: 50%;
-  }
-  .container .guide__title {
+
+  header h1 {
+    color: #9356DC;
+    position: absolute;
+    margin-top: -10px;
+    font-size: 50px;
+    font-family: "Shrikhand";
+    left: 350px;
     text-align: center;
-    font-size: 30px;
-    margin-right: 40px;
-    margin-bottom: 20px;
+  }
+  header h1 .oh {
+    color: #99E2D0;
+  }
+  header h1 .my {
+    color: #FF79DA;
   }
 
-  .restaurants h1 {
-    text-align: center;
-    font-size: 30px;
-  }
-
-  .boxmenu1 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-
-  .boxmenu2 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-
-  .restaurants__cards {
-    width: 350px;
+  .container {
+    width: 100%;
     height: auto;
-    /*.__pal {
-        background-repeat: no-repeat;
-        width: 100%;
-    }*/
+    background-image: url(../ressources/img/background-desktop.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .container .debutpage {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .container .location {
+    background: transparent;
+    margin-left: 1200px;
+  }
+  .container .location h2 {
+    font-size: 30px;
+    color: #e9e9e9;
+    background: transparent;
+    font-weight: normal;
+  }
+  .container .pres {
+    background: transparent;
+    margin: auto;
+  }
+  .container .pres h1 {
+    color: #FF79DA;
+    font-size: 30px;
+  }
+  .container .pres p {
+    font-size: 20px;
+    color: #fff;
+  }
+  .container .pres button {
+    font-size: 20px;
+  }
+  .container .guide ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+  }
+  .container .guide li {
+    height: 200px;
+    width: 200px;
+    padding: 0;
+    text-align: center;
+  }
+  .container .guide li h2 {
+    font-size: 20px;
+    background-color: #99E2D0;
+  }
+  .container .guide li h2 .ichi {
+    visibility: hidden;
+    position: relative;
+  }
+  .container .guide li h2 .ichi::after {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "Choose a restaurant";
+  }
+  .container .guide li h2 .ni {
+    visibility: hidden;
+    position: relative;
+  }
+  .container .guide li h2 .ni::after {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "Create your menu";
+  }
+  .container .guide li h2 .san {
+    visibility: hidden;
+    position: relative;
+  }
+  .container .guide li h2 .san::after {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "Go enjoy your meal at the restaurant";
   }
 }
 .fa {
   z-index: 2;
-}
-
-.box {
-  display: flex;
-  flex-direction: column;
 }
 
 .img_full {
@@ -496,6 +532,82 @@ footer .logo {
 .main .endmenu {
   display: block;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .intro {
+    background: transparent;
+    margin-bottom: 400px;
+  }
+
+  .img_full {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    height: 500px;
+    opacity: 0.9;
+    background-position-y: -200px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .img_enchant {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    height: 500px;
+    opacity: 0.9;
+    background-position-y: -650px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .img_barquette {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    height: 500px;
+    opacity: 0.9;
+    background-position-y: -200px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .img_gourmand {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    height: 500px;
+    opacity: 0.9;
+    background-position-y: -200px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .intro .logo {
+    top: 0px;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 35%;
+    font-size: 50px;
+    font-family: "Shrikhand";
+    font-weight: normal;
+    background: transparent;
+    color: #9356DC;
+  }
+
+  .btn-menu {
+    padding: 10px 20px;
+    width: 20%;
+  }
+
+  .intro .fa-arrow-left::before {
+    font-size: 40px;
+  }
+
+  .price {
+    margin-left: 70px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
