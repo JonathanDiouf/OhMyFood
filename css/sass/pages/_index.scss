@@ -184,69 +184,111 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .logo {
-        margin-left: 0px;
-        margin-right: 0px;
-        text-align: left;
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    header h1 {
+        color: $color-primary;
+        position: absolute;
+        margin-top: -10px;
+        font-size: 50px;
+        font-family: $police-title;
+        left: 350px;
+        text-align: center;
+        .oh {
+            color: $color-tertiary;
+        }
+        .my {
+            color: $color-secondary;
+        }
     }
     .container {
-        display: flex;
-        flex-direction: row;
-        div {
-            width: 50%;
+        width: 100%;
+        height: auto;
+        background-image: url(../ressources/img/background-desktop.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        .debutpage {
             display: flex;
             flex-direction: column;
-            .location {
-                padding-top: 20px;
+            overflow: hidden;
+        }
+        .location {
+            background: transparent;
+            margin-left: 1200px;
+            h2 {
+                font-size: 30px;
+                color: #e9e9e9;
+                background: transparent;
+                font-weight: normal;
             }
-            .pres {
-                button {
-                    margin-top: 80px;
-                    font-size: 20px;
-                }
-                h1 {
-                    padding-top: 20px;
-                    font-size: 30px;
-                }
-                p {
-                    padding-top: 10px;
-                    margin-bottom: 20px;
-                    font-size: 20px;
-                }
+        }
+        .pres {
+            background: transparent;
+            margin: auto;
+            h1 {
+                color: $color-secondary;
+                font-size: 30px;
+            }
+            p {
+                font-size: 20px;
+                color: #fff;
+            }
+            button {
+                font-size: 20px;
             }
         }
         .guide {
-            width: 50%;
-            &__title {
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
                 text-align: center;
-                font-size: 30px;
-                margin-right: 40px;
-                margin-bottom: 20px;
+            }
+            li {
+                height: 200px;
+                width: 200px;
+                padding: 0;
+                text-align: center;
+                h2 {
+                    font-size: 20px;
+                    background-color: $color-tertiary;
+                    .ichi {
+                        visibility: hidden;
+                        position: relative;
+                        &::after {
+                            visibility: visible;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            content: "Choose a restaurant";
+                        }
+                    }
+                    .ni {
+                        visibility: hidden;
+                        position: relative;
+                        &::after {
+                            visibility: visible;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            content: "Create your menu";
+                        }
+                    }
+                    .san {
+                        visibility: hidden;
+                        position: relative;
+                        &::after {
+                            visibility: visible;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            content: "Go enjoy your meal at the restaurant";
+                        }
+                    }
+                }
             }
         }
-    }
-    .restaurants h1 {
-        text-align: center;
-        font-size: 30px;
-    }
-    .boxmenu1 {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    .boxmenu2 {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    .restaurants__cards {
-        width: 350px;
-        height: auto;
-        /*.__pal {
-            background-repeat: no-repeat;
-            width: 100%;
-        }*/
     }
 }
