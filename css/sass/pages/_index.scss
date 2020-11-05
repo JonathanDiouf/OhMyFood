@@ -266,9 +266,14 @@
     }
     .restaurants {
         text-align: center;
+        background-color: #e9e9e9;
         h1 {
             margin: auto;
             font-size: 40px;
+        }
+        .restaurants__cards {
+            width: 300px;
+            text-align: left;
         }
         .boxmenu1 {
             display: flex;
@@ -278,7 +283,7 @@
                 @include bck-img-desk;
             }
             .__enchant {
-                @include bck-img-desk(-300px)
+                @include bck-img-desk(-100px)
             }
         }
         .boxmenu2 {

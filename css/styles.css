@@ -369,10 +369,15 @@ footer .logo {
 
   .restaurants {
     text-align: center;
+    background-color: #e9e9e9;
   }
   .restaurants h1 {
     margin: auto;
     font-size: 40px;
+  }
+  .restaurants .restaurants__cards {
+    width: 300px;
+    text-align: left;
   }
   .restaurants .boxmenu1 {
     display: flex;
@@ -380,20 +385,14 @@ footer .logo {
     justify-content: space-around;
   }
   .restaurants .boxmenu1 .__pal {
-    width: 100%;
-    height: 300px;
     opacity: 0.9;
-    background-position-y: -200px;
+    background-position-y: 0px;
     background-repeat: no-repeat;
-    background-size: 100%;
   }
   .restaurants .boxmenu1 .__enchant {
-    width: 100%;
-    height: 300px;
     opacity: 0.9;
-    background-position-y: -300px;
+    background-position-y: -100px;
     background-repeat: no-repeat;
-    background-size: 100%;
   }
   .restaurants .boxmenu2 {
     display: flex;
@@ -401,20 +400,14 @@ footer .logo {
     justify-content: space-around;
   }
   .restaurants .boxmenu2 .__gourmand {
-    width: 100%;
-    height: 300px;
     opacity: 0.9;
-    background-position-y: -200px;
+    background-position-y: 0px;
     background-repeat: no-repeat;
-    background-size: 100%;
   }
   .restaurants .boxmenu2 .__barquette {
-    width: 100%;
-    height: 300px;
     opacity: 0.9;
-    background-position-y: -200px;
+    background-position-y: 0px;
     background-repeat: no-repeat;
-    background-size: 100%;
   }
 }
 .fa {
@@ -564,39 +557,27 @@ footer .logo {
   }
 
   .img_full {
-    width: 100%;
-    height: 300px;
     opacity: 0.9;
-    background-position-y: -200px;
+    background-position-y: 0px;
     background-repeat: no-repeat;
-    background-size: 100%;
   }
 
   .img_enchant {
-    width: 100%;
-    height: 300px;
     opacity: 0.9;
     background-position-y: -650px;
     background-repeat: no-repeat;
-    background-size: 100%;
   }
 
   .img_barquette {
-    width: 100%;
-    height: 300px;
     opacity: 0.9;
-    background-position-y: -200px;
+    background-position-y: 0px;
     background-repeat: no-repeat;
-    background-size: 100%;
   }
 
   .img_gourmand {
-    width: 100%;
-    height: 300px;
     opacity: 0.9;
-    background-position-y: -200px;
+    background-position-y: 0px;
     background-repeat: no-repeat;
-    background-size: 100%;
   }
 
   .intro .logo {
