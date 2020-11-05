@@ -17,9 +17,7 @@
 
 @mixin bck-img-desk($position-y: -200px) {
     width: 100%;
-    position: absolute;
-    top: 0px;
-    height: 500px;
+    height: 300px;
     opacity: 0.9;
     background-position-y: $position-y;
     background-repeat: no-repeat;

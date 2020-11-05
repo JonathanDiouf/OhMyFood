@@ -251,43 +251,45 @@
                 width: 200px;
                 padding: 0;
                 text-align: center;
+                display: flex;
+                flex-direction: column;
+                span {
+                    align-self: center;
+                }
                 h2 {
+                    margin-top: -15px;
                     font-size: 20px;
                     background-color: $color-tertiary;
-                    .ichi {
-                        visibility: hidden;
-                        position: relative;
-                        &::after {
-                            visibility: visible;
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            content: "Choose a restaurant";
-                        }
-                    }
-                    .ni {
-                        visibility: hidden;
-                        position: relative;
-                        &::after {
-                            visibility: visible;
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            content: "Create your menu";
-                        }
-                    }
-                    .san {
-                        visibility: hidden;
-                        position: relative;
-                        &::after {
-                            visibility: visible;
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            content: "Go enjoy your meal at the restaurant";
-                        }
-                    }
                 }
+            }
+        }
+    }
+    .restaurants {
+        text-align: center;
+        h1 {
+            margin: auto;
+            font-size: 40px;
+        }
+        .boxmenu1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            .__pal {
+                @include bck-img-desk;
+            }
+            .__enchant {
+                @include bck-img-desk(-300px)
+            }
+        }
+        .boxmenu2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            .__gourmand {
+                @include bck-img-desk;
+            }
+            .__barquette {
+                @include bck-img-desk;
             }
         }
     }

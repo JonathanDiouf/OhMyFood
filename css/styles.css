@@ -355,43 +355,66 @@ footer .logo {
     width: 200px;
     padding: 0;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .container .guide li span {
+    align-self: center;
   }
   .container .guide li h2 {
+    margin-top: -15px;
     font-size: 20px;
     background-color: #99E2D0;
   }
-  .container .guide li h2 .ichi {
-    visibility: hidden;
-    position: relative;
+
+  .restaurants {
+    text-align: center;
   }
-  .container .guide li h2 .ichi::after {
-    visibility: visible;
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "Choose a restaurant";
+  .restaurants h1 {
+    margin: auto;
+    font-size: 40px;
   }
-  .container .guide li h2 .ni {
-    visibility: hidden;
-    position: relative;
+  .restaurants .boxmenu1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
-  .container .guide li h2 .ni::after {
-    visibility: visible;
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "Create your menu";
+  .restaurants .boxmenu1 .__pal {
+    width: 100%;
+    height: 300px;
+    opacity: 0.9;
+    background-position-y: -200px;
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
-  .container .guide li h2 .san {
-    visibility: hidden;
-    position: relative;
+  .restaurants .boxmenu1 .__enchant {
+    width: 100%;
+    height: 300px;
+    opacity: 0.9;
+    background-position-y: -300px;
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
-  .container .guide li h2 .san::after {
-    visibility: visible;
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "Go enjoy your meal at the restaurant";
+  .restaurants .boxmenu2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .restaurants .boxmenu2 .__gourmand {
+    width: 100%;
+    height: 300px;
+    opacity: 0.9;
+    background-position-y: -200px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .restaurants .boxmenu2 .__barquette {
+    width: 100%;
+    height: 300px;
+    opacity: 0.9;
+    background-position-y: -200px;
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
 }
 .fa {
@@ -542,9 +565,7 @@ footer .logo {
 
   .img_full {
     width: 100%;
-    position: absolute;
-    top: 0px;
-    height: 500px;
+    height: 300px;
     opacity: 0.9;
     background-position-y: -200px;
     background-repeat: no-repeat;
@@ -553,9 +574,7 @@ footer .logo {
 
   .img_enchant {
     width: 100%;
-    position: absolute;
-    top: 0px;
-    height: 500px;
+    height: 300px;
     opacity: 0.9;
     background-position-y: -650px;
     background-repeat: no-repeat;
@@ -564,9 +583,7 @@ footer .logo {
 
   .img_barquette {
     width: 100%;
-    position: absolute;
-    top: 0px;
-    height: 500px;
+    height: 300px;
     opacity: 0.9;
     background-position-y: -200px;
     background-repeat: no-repeat;
@@ -575,9 +592,7 @@ footer .logo {
 
   .img_gourmand {
     width: 100%;
-    position: absolute;
-    top: 0px;
-    height: 500px;
+    height: 300px;
     opacity: 0.9;
     background-position-y: -200px;
     background-repeat: no-repeat;
