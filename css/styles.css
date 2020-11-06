@@ -91,12 +91,15 @@ footer .logo {
   padding: 0;
   margin: 0;
   color: #fff;
+  text-align: center;
 }
 .home .logo {
   display: block;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
+  color: #000;
+  font-family: "Shrikhand";
+  font-size: 40px;
+  padding: 0;
+  margin: auto;
 }
 
 .location {
@@ -291,19 +294,18 @@ footer .logo {
     flex-direction: column;
   }
 
-  header h1 {
+  .home .logo {
     color: #9356DC;
     position: absolute;
     margin-top: -10px;
     font-size: 50px;
     font-family: "Shrikhand";
-    left: 350px;
-    text-align: center;
+    left: 475px;
   }
-  header h1 .oh {
+  .home .logo .oh {
     color: #99E2D0;
   }
-  header h1 .my {
+  .home .logo .my {
     color: #FF79DA;
   }
 
@@ -321,7 +323,7 @@ footer .logo {
   }
   .container .location {
     background: transparent;
-    margin-left: 1200px;
+    margin-left: 1000px;
   }
   .container .location h2 {
     font-size: 30px;
@@ -343,6 +345,13 @@ footer .logo {
   }
   .container .pres button {
     font-size: 20px;
+  }
+  .container .guide {
+    text-align: center;
+  }
+  .container .guide h1 {
+    font-size: 30px;
+    color: #fff;
   }
   .container .guide ul {
     display: flex;

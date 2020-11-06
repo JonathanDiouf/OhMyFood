@@ -3,11 +3,14 @@
     padding: 0;
     margin: 0;
     color: #fff;
+    text-align: center;
     .logo {
         display: block;
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
+        color: #000;
+        font-family: $police-title;
+        font-size: 40px;
+        padding: 0;
+        margin: auto;
     }
 }
 
@@ -188,14 +191,13 @@
         display: flex;
         flex-direction: column;
     }
-    header h1 {
+    .home .logo {
         color: $color-primary;
         position: absolute;
         margin-top: -10px;
         font-size: 50px;
         font-family: $police-title;
-        left: 350px;
-        text-align: center;
+        left: 475px;
         .oh {
             color: $color-tertiary;
         }
@@ -216,7 +218,7 @@
         }
         .location {
             background: transparent;
-            margin-left: 1200px;
+            margin-left: 1000px;
             h2 {
                 font-size: 30px;
                 color: #e9e9e9;
@@ -240,6 +242,11 @@
             }
         }
         .guide {
+            text-align: center;
+            h1 {
+                font-size: 30px;
+                color: #fff;
+            }
             ul {
                 display: flex;
                 flex-direction: row;
