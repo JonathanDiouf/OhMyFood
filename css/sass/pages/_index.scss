@@ -3,11 +3,14 @@
     padding: 0;
     margin: 0;
     color: #fff;
+    text-align: center;
     .logo {
         display: block;
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
+        color: #000;
+        font-family: $police-title;
+        font-size: 40px;
+        padding: 0;
+        margin: auto;
     }
 }
 
@@ -188,14 +191,13 @@
         display: flex;
         flex-direction: column;
     }
-    header h1 {
+    .home .logo {
         color: $color-primary;
         position: absolute;
         margin-top: -10px;
         font-size: 50px;
         font-family: $police-title;
-        left: 350px;
-        text-align: center;
+        left: 475px;
         .oh {
             color: $color-tertiary;
         }
@@ -216,7 +218,7 @@
         }
         .location {
             background: transparent;
-            margin-left: 1200px;
+            margin-left: 1000px;
             h2 {
                 font-size: 30px;
                 color: #e9e9e9;
@@ -240,6 +242,11 @@
             }
         }
         .guide {
+            text-align: center;
+            h1 {
+                font-size: 30px;
+                color: #fff;
+            }
             ul {
                 display: flex;
                 flex-direction: row;
@@ -251,43 +258,50 @@
                 width: 200px;
                 padding: 0;
                 text-align: center;
+                display: flex;
+                flex-direction: column;
+                span {
+                    align-self: center;
+                }
                 h2 {
+                    margin-top: -15px;
                     font-size: 20px;
                     background-color: $color-tertiary;
-                    .ichi {
-                        visibility: hidden;
-                        position: relative;
-                        &::after {
-                            visibility: visible;
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            content: "Choose a restaurant";
-                        }
-                    }
-                    .ni {
-                        visibility: hidden;
-                        position: relative;
-                        &::after {
-                            visibility: visible;
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            content: "Create your menu";
-                        }
-                    }
-                    .san {
-                        visibility: hidden;
-                        position: relative;
-                        &::after {
-                            visibility: visible;
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            content: "Go enjoy your meal at the restaurant";
-                        }
-                    }
                 }
+            }
+        }
+    }
+    .restaurants {
+        text-align: center;
+        background-color: #e9e9e9;
+        h1 {
+            margin: auto;
+            font-size: 40px;
+        }
+        .restaurants__cards {
+            width: 300px;
+            text-align: left;
+        }
+        .boxmenu1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            .__pal {
+                @include bck-img-desk;
+            }
+            .__enchant {
+                @include bck-img-desk(-100px)
+            }
+        }
+        .boxmenu2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            .__gourmand {
+                @include bck-img-desk;
+            }
+            .__barquette {
+                @include bck-img-desk;
             }
         }
     }
