@@ -1,3 +1,32 @@
+/*.spinner {
+    height: 100vh;
+    opacity: 1;
+    position: relative;
+    transition: opacity linear 0.1s;
+    text-align: center;
+    h1 {
+        position: absolute;
+        left: 40%;
+        top: 40%;
+    }
+    &::before {
+        animation: 2s linear infinite spinner;
+        border: solid 3px $color-tertiary;
+        border-bottom-color: $color-secondary;
+        border-radius: 50%;
+        content: "";
+        height: 40px;
+        left: 50%;
+        opacity: inherit;
+        position: absolute;
+        top: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        transform-origin: center;
+        width: 40px;
+        will-change: transform;
+    }
+}*/
+
 .home {
     width: 100%;
     padding: 0;
@@ -155,32 +184,28 @@
         & .heart {
             width: 30%;
             .fa-heart-o {
-                position: relative;
-                top: calc(50% - 10px);
-                left: calc(50% - 10px);
-            }
-            .fa-heart {
-                transition: transform 3000ms;
-                transform: scale(2);
-                top: calc(50% - 10px);
-                left: calc(50% - 10px);
-                color: $color-primary;
-            }
-            &:hover {
-                .fa-heart-o {
-                    display: none;
-                }
-                .fa-heart {
-                    transition: transform 3000ms;
-                    transform: scale(0);
-                    display: inline;
-                    position: relative;
-                    top: calc(50% - 10px);
-                    left: calc(50% - 10px);
-                }
-            }
-            .fa {
                 font-size: 30px;
+                position: relative;
+                color: #000;
+                margin-top: 20px;
+                margin-left: 50px;
+                z-index: 10;
+                transition: color 1s;
+                &:hover {
+                    color: $color-tertiary;
+                }
+            }
+            .mn1 {
+                @include heart(970px);
+            }
+            .mn2 {
+                @include heart(1248px);
+            }
+            .mn3 {
+                @include heart(1525px);
+            }
+            .mn4 {
+                @include heart(1803px);
             }
         }
     }

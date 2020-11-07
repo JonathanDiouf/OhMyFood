@@ -20,3 +20,28 @@
     background-position-y: $position-y;
     background-repeat: no-repeat;
 }
+
+@mixin heart($top) {
+    z-index: 1000;
+    font-size: 25px;
+    position: absolute;
+    color: #fff;
+    top: $top;
+    right: 41px;
+    opacity: 0;
+    transform: scaleX(1.1);
+    transition: all 1s;
+    &:hover {
+        color: $color-tertiary;
+        opacity: 1;
+    }
+}
+
+@keyframes spinner {
+    0% {
+        transform: translate3d(-50%, -50%, 0) rotate(0deg);
+    }
+    100% {
+        transform: translate3d(-50%, -50%, 0) rotate(360deg);
+    }
+}
