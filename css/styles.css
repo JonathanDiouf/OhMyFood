@@ -470,6 +470,24 @@ footer .logo {
     width: 300px;
     text-align: left;
   }
+  .restaurants .restaurants__cards .mn1 {
+    top: 897px;
+    left: 515px;
+    color: #000;
+    opacity: 1;
+  }
+  .restaurants .restaurants__cards .mn2 {
+    top: 897px;
+    left: 1200px;
+  }
+  .restaurants .restaurants__cards .mn3 {
+    top: 1189px;
+    left: 515px;
+  }
+  .restaurants .restaurants__cards .mn4 {
+    top: 1189px;
+    left: 1200px;
+  }
   .restaurants .boxmenu1 {
     display: flex;
     flex-direction: row;

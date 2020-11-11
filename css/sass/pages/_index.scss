@@ -306,6 +306,24 @@
         .restaurants__cards {
             width: 300px;
             text-align: left;
+            .mn1 {
+                top: 897px;
+                left: 515px;
+                color: #000;
+                opacity: 1;
+            }
+            .mn2 {
+                top: 897px;
+                left: 1200px;
+            }
+            .mn3 {
+                top: 1189px;
+                left: 515px;
+            }
+            .mn4 {
+                top: 1189px;
+                left: 1200px;
+            }
         }
         .boxmenu1 {
             display: flex;
