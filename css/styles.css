@@ -7,6 +7,24 @@
     transform: translate3d(-50%, -50%, 0) rotate(360deg);
   }
 }
+@keyframes disapear {
+  90% {
+    opacity: 1;
+    display: none;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+@keyframes appear {
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 html,
 body {
   margin: 0;
@@ -94,34 +112,43 @@ footer .logo {
   margin-right: 20%;
 }
 
-/*.spinner {
-    height: 100vh;
-    opacity: 1;
-    position: relative;
-    transition: opacity linear 0.1s;
-    text-align: center;
-    h1 {
-        position: absolute;
-        left: 40%;
-        top: 40%;
-    }
-    &::before {
-        animation: 2s linear infinite spinner;
-        border: solid 3px $color-tertiary;
-        border-bottom-color: $color-secondary;
-        border-radius: 50%;
-        content: "";
-        height: 40px;
-        left: 50%;
-        opacity: inherit;
-        position: absolute;
-        top: 50%;
-        transform: translate3d(-50%, -50%, 0);
-        transform-origin: center;
-        width: 40px;
-        will-change: transform;
-    }
-}*/
+#container_spinner {
+  animation: disapear 3s;
+  animation-fill-mode: forwards;
+}
+
+.spinner {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.spinner h1 {
+  position: relative;
+  left: 0;
+  top: 40%;
+}
+.spinner::before {
+  animation: 2s linear infinite spinner;
+  border: solid 3px #99E2D0;
+  border-bottom-color: #FF79DA;
+  border-radius: 50%;
+  content: "";
+  height: 40px;
+  left: 50%;
+  opacity: inherit;
+  position: absolute;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  transform-origin: center;
+  width: 40px;
+  will-change: transform;
+}
+
 .home {
   width: 100%;
   padding: 0;
@@ -200,7 +227,9 @@ footer .logo {
 }
 .guide span {
   margin-right: -5px;
-  z-index: 2;
+  opacity: 0;
+  animation: appear 3s;
+  animation-fill-mode: forwards;
   padding: 3px;
   border-radius: 50%;
   background-color: #9356DC;
@@ -271,7 +300,6 @@ footer .logo {
   height: 200px;
 }
 .restaurants__cards h3 {
-  position: relative;
   margin: 10px 20px;
   padding: 5px 20px;
   font-size: 15px;
@@ -309,63 +337,17 @@ footer .logo {
 .restaurants__description .heart .fa-heart-o:hover {
   color: #99E2D0;
 }
-.restaurants__description .heart .mn1 {
+.restaurants__description .heart .fa-heart {
   z-index: 1000;
-  font-size: 25px;
-  position: absolute;
+  font-size: 23px;
+  position: relative;
   color: #fff;
-  top: 970px;
-  right: 41px;
-  opacity: 0;
-  transform: scaleX(1.1);
-  transition: all 1s;
-}
-.restaurants__description .heart .mn1:hover {
-  color: #99E2D0;
+  top: -25px;
+  left: 54px;
   opacity: 1;
+  transition: color 1s;
 }
-.restaurants__description .heart .mn2 {
-  z-index: 1000;
-  font-size: 25px;
-  position: absolute;
-  color: #fff;
-  top: 1248px;
-  right: 41px;
-  opacity: 0;
-  transform: scaleX(1.1);
-  transition: all 1s;
-}
-.restaurants__description .heart .mn2:hover {
-  color: #99E2D0;
-  opacity: 1;
-}
-.restaurants__description .heart .mn3 {
-  z-index: 1000;
-  font-size: 25px;
-  position: absolute;
-  color: #fff;
-  top: 1525px;
-  right: 41px;
-  opacity: 0;
-  transform: scaleX(1.1);
-  transition: all 1s;
-}
-.restaurants__description .heart .mn3:hover {
-  color: #99E2D0;
-  opacity: 1;
-}
-.restaurants__description .heart .mn4 {
-  z-index: 1000;
-  font-size: 25px;
-  position: absolute;
-  color: #fff;
-  top: 1803px;
-  right: 41px;
-  opacity: 0;
-  transform: scaleX(1.1);
-  transition: all 1s;
-}
-.restaurants__description .heart .mn4:hover {
+.restaurants__description .heart .fa-heart:hover {
   color: #99E2D0;
   opacity: 1;
 }
@@ -377,8 +359,11 @@ footer .logo {
   }
 
   .home .logo {
-    color: #9356DC;
+    animation: appear 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
     position: absolute;
+    color: #9356DC;
     margin-top: -10px;
     font-size: 50px;
     font-family: "Shrikhand";
@@ -469,24 +454,6 @@ footer .logo {
   .restaurants .restaurants__cards {
     width: 300px;
     text-align: left;
-  }
-  .restaurants .restaurants__cards .mn1 {
-    top: 897px;
-    left: 515px;
-    color: #000;
-    opacity: 1;
-  }
-  .restaurants .restaurants__cards .mn2 {
-    top: 897px;
-    left: 1200px;
-  }
-  .restaurants .restaurants__cards .mn3 {
-    top: 1189px;
-    left: 515px;
-  }
-  .restaurants .restaurants__cards .mn4 {
-    top: 1189px;
-    left: 1200px;
   }
   .restaurants .boxmenu1 {
     display: flex;
