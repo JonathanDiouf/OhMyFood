@@ -498,7 +498,7 @@ footer .logo {
     background-repeat: no-repeat;
   }
 }
-@media screen and (min-width: 600px), (max-width: 1200px) {
+@media screen and (min-width: 800px), (max-width: 1200px) {
   .restaurants__cards {
     width: 350px;
     margin: auto;
@@ -521,6 +521,7 @@ footer .logo {
   width: 100%;
   height: 200px;
   width: 100%;
+  background-size: 100%;
   overflow: hidden;
   z-index: -2;
 }
@@ -536,6 +537,7 @@ footer .logo {
   width: 100%;
   height: 200px;
   width: 100%;
+  background-size: 100%;
   overflow: hidden;
   z-index: -2;
 }
@@ -552,6 +554,7 @@ footer .logo {
   width: 100%;
   height: 200px;
   width: 100%;
+  background-size: 100%;
   overflow: hidden;
   z-index: -2;
 }
@@ -567,6 +570,7 @@ footer .logo {
   width: 100%;
   height: 200px;
   width: 100%;
+  background-size: 100%;
   overflow: hidden;
   z-index: -2;
 }
@@ -669,10 +673,41 @@ footer .logo {
 }
 .main .menu article .price {
   width: 20%;
+  display: flex;
+  flex-direction: row;
 }
 .main .menu article .price p {
   margin: 40px 0px 5px 30px;
   font-weight: bold;
+  float: right;
+  margin-left: 50%;
+}
+.main .menu article .price .box {
+  display: none;
+}
+.main .menu article:active {
+  overflow: hidden;
+  /*.text {
+          .long_text {
+              display: none;
+          }
+          .long_text::after {
+              content: "With black truflle and...";
+          }
+      }*/
+}
+.main .menu article:active .price {
+  width: 35%;
+}
+.main .menu article:active .price .box {
+  display: block;
+  background-color: aquamarine;
+  width: 100%;
+  text-align: center;
+}
+.main .menu article:active .price .box i {
+  color: #000;
+  font-size: 20px;
 }
 .main .endmenu {
   display: block;
@@ -739,11 +774,21 @@ footer .logo {
     font-size: 40px;
   }
 
-  .price {
-    margin-left: 70px;
+  .main .menu article .price p {
+    margin-left: 80%;
+  }
+  .main .menu article:active .price {
+    width: 40%;
+  }
+  .main .menu article:active .price .box {
+    width: 100%;
+  }
+  .main .menu article:active .price .box i {
+    margin-left: 25%;
+    margin-top: 25%;
   }
 }
-@media screen and (min-width: 600px), (max-width: 1200px) {
+@media screen and (min-width: 700px) and (max-width: 1200px) {
   .intro .logo {
     margin: auto;
   }
@@ -766,6 +811,14 @@ footer .logo {
   .img_barquette {
     background-size: 100%;
     background-repeat: no-repeat;
+  }
+
+  .main .menu article .price p {
+    margin-left: 60%;
+  }
+  .main .menu article:active .price .box i {
+    margin-left: 25%;
+    margin-top: 25%;
   }
 }
 
