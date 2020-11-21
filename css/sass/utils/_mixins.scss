@@ -15,8 +15,17 @@
     height: 200px;
 }
 
+@mixin bck-img-desk-menupage($position-y: -200px) {
+    opacity: 0.9;
+    height: 400px;
+    background-size: 100%;
+    background-position-y: $position-y;
+    background-repeat: no-repeat;
+}
+
 @mixin bck-img-desk($position-y: 0px) {
     opacity: 0.9;
+    background-size: 100%;
     background-position-y: $position-y;
     background-repeat: no-repeat;
 }
