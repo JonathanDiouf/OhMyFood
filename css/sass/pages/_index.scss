@@ -168,7 +168,6 @@
             @include bck-img("../ressources/img/gourmand");
         }
         & h3 {
-            //position: relative;
             margin: 10px 20px;
             padding: 5px 20px;
             font-size: 15px;
@@ -332,6 +331,20 @@
             .__barquette {
                 @include bck-img-desk;
             }
+        }
+    }
+}
+
+@media screen and (min-width: 600px),
+(max-width: 1200px) {
+    .restaurants__cards {
+        width: 350px;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        .__gourmand {
+            background-repeat: no-repeat;
+            object-fit: contain;
         }
     }
 }

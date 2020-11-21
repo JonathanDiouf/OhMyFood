@@ -14,13 +14,14 @@
     }
     
     .img_enchant {
-        @include bck-img('../ressources/img/enchanted');
+        @include bck-img('../ressources/img/enchanted', 500px);
         width: 100%;
         overflow: hidden;
         z-index: -2;
         img {
             width: 100%;
-            height: auto;
+            object-fit: contain;
+            background-position-y: -400px;
         }
     }
     
@@ -160,5 +161,28 @@
         }
         .price {
             margin-left: 70px;
+        }
+    }
+    
+    @media screen and (min-width: 600px),
+    (max-width: 1200px) {
+        .intro .logo {
+            margin: auto;
+        }
+        .img_full {
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        .img_enchant {
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        .img_gourmand {
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        .img_barquette {
+            background-size: 100%;
+            background-repeat: no-repeat;
         }
     }
