@@ -309,6 +309,10 @@
         .restaurants__cards {
             width: 300px;
             text-align: left;
+            .fa-heart {
+                top: -26px;
+                left: 54px;
+            }
         }
         .boxmenu1 {
             display: flex;
