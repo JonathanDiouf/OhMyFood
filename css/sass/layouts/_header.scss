@@ -12,9 +12,12 @@
         }
     }
     .logo {
-        font-size: 10px;
-        color: #fff;
+        font-size: 30px;
+        color: $color-primary;
+        font-family: $police-title;
+        margin: 0;
+        padding: 0;
         margin-left: 20%;
-        margin-right: 20%;
+        margin-right: 10%;
     }
 }

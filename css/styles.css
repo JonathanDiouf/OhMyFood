@@ -106,10 +106,13 @@ footer .logo {
   color: #000;
 }
 .intro .logo {
-  font-size: 10px;
-  color: #fff;
+  font-size: 30px;
+  color: #9356DC;
+  font-family: "Shrikhand";
+  margin: 0;
+  padding: 0;
   margin-left: 20%;
-  margin-right: 20%;
+  margin-right: 10%;
 }
 
 #container_spinner {
@@ -273,28 +276,28 @@ footer .logo {
 }
 .restaurants__cards .__pal {
   background-image: url("../ressources/img/thefull.jpg");
-  background-size: 350px 200px;
+  background-size: 400px 200px;
   background-position: center;
   width: 100%;
   height: 200px;
 }
 .restaurants__cards .__enchant {
   background-image: url("../ressources/img/enchanted.jpg");
-  background-size: 350px 350px;
+  background-size: 400px 350px;
   background-position: center;
   width: 100%;
   height: 200px;
 }
 .restaurants__cards .__barquette {
   background-image: url("../ressources/img/barquette.jpg");
-  background-size: 350px 200px;
+  background-size: 400px 200px;
   background-position: center;
   width: 100%;
   height: 200px;
 }
 .restaurants__cards .__gourmand {
   background-image: url("../ressources/img/gourmand.jpg");
-  background-size: 350px 200px;
+  background-size: 400px 200px;
   background-position: center;
   width: 100%;
   height: 200px;
@@ -341,10 +344,11 @@ footer .logo {
   z-index: 1000;
   font-size: 23px;
   position: relative;
-  color: #fff;
-  top: -25px;
-  left: 54px;
-  opacity: 1;
+  color: #e9e9e9;
+  top: -3px;
+  left: -26px;
+  opacity: 0;
+  transform: scale(1.3);
   transition: color 1s;
 }
 .restaurants__description .heart .fa-heart:hover {
@@ -455,6 +459,10 @@ footer .logo {
     width: 300px;
     text-align: left;
   }
+  .restaurants .restaurants__cards .fa-heart {
+    top: -26px;
+    left: 54px;
+  }
   .restaurants .boxmenu1 {
     display: flex;
     flex-direction: row;
@@ -462,11 +470,13 @@ footer .logo {
   }
   .restaurants .boxmenu1 .__pal {
     opacity: 0.9;
+    background-size: 100%;
     background-position-y: 0px;
     background-repeat: no-repeat;
   }
   .restaurants .boxmenu1 .__enchant {
     opacity: 0.9;
+    background-size: 100%;
     background-position-y: -100px;
     background-repeat: no-repeat;
   }
@@ -477,13 +487,27 @@ footer .logo {
   }
   .restaurants .boxmenu2 .__gourmand {
     opacity: 0.9;
+    background-size: 100%;
     background-position-y: 0px;
     background-repeat: no-repeat;
   }
   .restaurants .boxmenu2 .__barquette {
     opacity: 0.9;
+    background-size: 100%;
     background-position-y: 0px;
     background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 800px), (max-width: 1200px) {
+  .restaurants__cards {
+    width: 350px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .restaurants__cards .__gourmand {
+    background-repeat: no-repeat;
+    object-fit: contain;
   }
 }
 .fa {
@@ -492,11 +516,12 @@ footer .logo {
 
 .img_full {
   background-image: url("../ressources/img/thefull.jpg");
-  background-size: 350px 200px;
+  background-size: 400px 200px;
   background-position: center;
   width: 100%;
   height: 200px;
   width: 100%;
+  background-size: 100%;
   overflow: hidden;
   z-index: -2;
 }
@@ -507,26 +532,29 @@ footer .logo {
 
 .img_enchant {
   background-image: url("../ressources/img/enchanted.jpg");
-  background-size: 350px 200px;
+  background-size: 400px 500px;
   background-position: center;
   width: 100%;
   height: 200px;
   width: 100%;
+  background-size: 100%;
   overflow: hidden;
   z-index: -2;
 }
 .img_enchant img {
   width: 100%;
-  height: auto;
+  object-fit: contain;
+  background-position-y: -400px;
 }
 
 .img_barquette {
   background-image: url("../ressources/img/barquette.jpg");
-  background-size: 350px 200px;
+  background-size: 400px 200px;
   background-position: center;
   width: 100%;
   height: 200px;
   width: 100%;
+  background-size: 100%;
   overflow: hidden;
   z-index: -2;
 }
@@ -537,11 +565,12 @@ footer .logo {
 
 .img_gourmand {
   background-image: url("../ressources/img/gourmand.jpg");
-  background-size: 350px 200px;
+  background-size: 400px 200px;
   background-position: center;
   width: 100%;
   height: 200px;
   width: 100%;
+  background-size: 100%;
   overflow: hidden;
   z-index: -2;
 }
@@ -575,6 +604,34 @@ footer .logo {
   float: right;
   padding: 25px 20px 0px 0px;
   font-size: 25px;
+}
+.main .head .fa-heart-o {
+  z-index: 10;
+  font-size: 30px;
+  position: relative;
+  color: #000;
+  transition: color 1s;
+}
+.main .head .fa-heart-o:hover {
+  color: #99E2D0;
+}
+.main .head .fa-heart {
+  z-index: 1000;
+  font-size: 23px;
+  position: relative;
+  color: #e9e9e9;
+  top: -3px;
+  left: -26px;
+  opacity: 0;
+  transform: scale(1.3);
+  transition: color 1s;
+  transform: scale(1.3);
+  left: 49px;
+  top: 1px;
+}
+.main .head .fa-heart:hover {
+  color: #99E2D0;
+  opacity: 1;
 }
 .main .menu {
   width: 100%;
@@ -616,10 +673,42 @@ footer .logo {
 }
 .main .menu article .price {
   width: 20%;
+  display: flex;
+  flex-direction: row;
 }
 .main .menu article .price p {
   margin: 40px 0px 5px 30px;
   font-weight: bold;
+  float: right;
+  margin-left: 50%;
+}
+.main .menu article .price .box {
+  display: none;
+}
+.main .menu article:active {
+  overflow: hidden;
+  /*.text {
+          .long_text {
+              display: none;
+          }
+          .long_text::after {
+              content: "With black truflle and...";
+          }
+      }*/
+}
+.main .menu article:active .price {
+  width: 35%;
+}
+.main .menu article:active .price .box {
+  display: block;
+  background-color: aquamarine;
+  width: 100%;
+  text-align: center;
+}
+.main .menu article:active .price .box i {
+  color: #000;
+  font-size: 20px;
+  line-height: 60px;
 }
 .main .endmenu {
   display: block;
@@ -629,38 +718,47 @@ footer .logo {
 @media screen and (min-width: 1200px) {
   .intro {
     background: transparent;
-    margin-bottom: 400px;
+    margin-bottom: 5px;
+    margin-top: 0px;
   }
 
   .img_full {
     opacity: 0.9;
-    background-position-y: 0px;
+    height: 400px;
+    background-size: 100%;
+    background-position-y: -300px;
     background-repeat: no-repeat;
   }
 
   .img_enchant {
     opacity: 0.9;
+    height: 400px;
+    background-size: 100%;
     background-position-y: -650px;
     background-repeat: no-repeat;
   }
 
   .img_barquette {
     opacity: 0.9;
-    background-position-y: 0px;
+    height: 400px;
+    background-size: 100%;
+    background-position-y: -300px;
     background-repeat: no-repeat;
   }
 
   .img_gourmand {
     opacity: 0.9;
-    background-position-y: 0px;
+    height: 400px;
+    background-size: 100%;
+    background-position-y: -300px;
     background-repeat: no-repeat;
   }
 
-  .intro .logo {
+  .intro h1.logo {
     top: 0px;
-    position: absolute;
+    position: relative;
+    margin: auto;
     margin-top: 0px;
-    margin-left: 35%;
     font-size: 50px;
     font-family: "Shrikhand";
     font-weight: normal;
@@ -677,8 +775,51 @@ footer .logo {
     font-size: 40px;
   }
 
-  .price {
-    margin-left: 70px;
+  .main .menu article .price p {
+    margin-left: 80%;
+  }
+  .main .menu article:active .price {
+    width: 40%;
+  }
+  .main .menu article:active .price .box {
+    width: 100%;
+  }
+  .main .menu article:active .price .box i {
+    margin-left: 35%;
+    margin-top: 25%;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+  .intro .logo {
+    margin: auto;
+  }
+
+  .img_full {
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .img_enchant {
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .img_gourmand {
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .img_barquette {
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .main .menu article .price p {
+    margin-left: 60%;
+  }
+  .main .menu article:active .price .box i {
+    margin-left: 25%;
+    margin-top: 25%;
   }
 }
 
