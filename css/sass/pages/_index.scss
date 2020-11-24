@@ -1,3 +1,40 @@
+#container_spinner {
+    animation: disapear 3s;
+    animation-fill-mode: forwards;
+}
+
+.spinner {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    h1 {
+        position: relative;
+        left: 0;
+        top: 40%;
+    }
+    &::before {
+        animation: 2s linear infinite spinner;
+        border: solid 3px $color-tertiary;
+        border-bottom-color: $color-secondary;
+        border-radius: 50%;
+        content: "";
+        height: 40px;
+        left: 50%;
+        opacity: inherit;
+        position: absolute;
+        top: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        transform-origin: center;
+        width: 40px;
+        will-change: transform;
+    }
+}
+
 .home {
     width: 100%;
     padding: 0;
@@ -75,7 +112,9 @@
     }
     & span {
         margin-right: -5px;
-        z-index: 2;
+        opacity: 0;
+        animation: appear 3s;
+        animation-fill-mode: forwards;
         padding: 3px;
         border-radius: 50%;
         background-color: $color-primary;
@@ -129,7 +168,7 @@
             @include bck-img("../ressources/img/gourmand");
         }
         & h3 {
-            position: relative;
+            //position: relative;
             margin: 10px 20px;
             padding: 5px 20px;
             font-size: 15px;
@@ -155,32 +194,19 @@
         & .heart {
             width: 30%;
             .fa-heart-o {
+                font-size: 30px;
                 position: relative;
-                top: calc(50% - 10px);
-                left: calc(50% - 10px);
+                color: #000;
+                margin-top: 20px;
+                margin-left: 50px;
+                z-index: 10;
+                transition: color 1s;
+                &:hover {
+                    color: $color-tertiary;
+                }
             }
             .fa-heart {
-                transition: transform 3000ms;
-                transform: scale(2);
-                top: calc(50% - 10px);
-                left: calc(50% - 10px);
-                color: $color-primary;
-            }
-            &:hover {
-                .fa-heart-o {
-                    display: none;
-                }
-                .fa-heart {
-                    transition: transform 3000ms;
-                    transform: scale(0);
-                    display: inline;
-                    position: relative;
-                    top: calc(50% - 10px);
-                    left: calc(50% - 10px);
-                }
-            }
-            .fa {
-                font-size: 30px;
+                @include heart;
             }
         }
     }
@@ -192,8 +218,11 @@
         flex-direction: column;
     }
     .home .logo {
-        color: $color-primary;
+        animation: appear 3s;
+        animation-fill-mode: forwards;
+        opacity: 0;
         position: absolute;
+        color: $color-primary;
         margin-top: -10px;
         font-size: 50px;
         font-family: $police-title;

@@ -20,3 +20,47 @@
     background-position-y: $position-y;
     background-repeat: no-repeat;
 }
+
+@mixin heart {
+    z-index: 1000;
+    font-size: 23px;
+    position: relative;
+    color: #fff;
+    top: -25px;
+    left: 54px;
+    opacity: 1;
+    transition: color 1s;
+    &:hover {
+        color: $color-tertiary;
+        opacity: 1;
+    }
+}
+
+@keyframes spinner {
+    0% {
+        transform: translate3d(-50%, -50%, 0) rotate(0deg);
+    }
+    100% {
+        transform: translate3d(-50%, -50%, 0) rotate(360deg);
+    }
+}
+
+@keyframes disapear {
+    90% {
+        opacity: 1;
+        display: none;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes appear {
+    90% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
