@@ -708,6 +708,7 @@ footer .logo {
 .main .menu article:active .price .box i {
   color: #000;
   font-size: 20px;
+  line-height: 60px;
 }
 .main .endmenu {
   display: block;
@@ -784,7 +785,7 @@ footer .logo {
     width: 100%;
   }
   .main .menu article:active .price .box i {
-    margin-left: 25%;
+    margin-left: 35%;
     margin-top: 25%;
   }
 }
