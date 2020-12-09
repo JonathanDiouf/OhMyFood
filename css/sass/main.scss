@@ -1,3 +1,4 @@
+@import "../../node_modules/@fortawesome/fontawesome-free/css/all.css";
 @import "./utils/variables";
 @import "./utils/functions";
 @import "./utils/mixins";
@@ -6,7 +7,4 @@
 @import "./layouts/footer";
 @import "./layouts/header";
 @import "./pages/index";
-@import "./pages/menu1";
-@import "./pages/menu2";
-@import "./pages/menu3";
-@import "./pages/menu4";
+@import "./pages/menu";

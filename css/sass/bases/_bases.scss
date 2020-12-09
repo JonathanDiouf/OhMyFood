@@ -1,0 +1,25 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h2,
+h1,
+p {
+    font-family: "Roboto";
+}
+
+h1 {
+    font: {
+        weight: bold;
+        size: 20px;
+    }
+}
+
+h2 {
+    font: {
+        weight: bold;
+        size: 15px;
+    }
+}
