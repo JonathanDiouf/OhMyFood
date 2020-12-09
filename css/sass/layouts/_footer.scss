@@ -1,10 +1,18 @@
 footer {
     width: 100%;
     background-color: #333030;
+    bottom: 0;
     p {
         font-family: sans-serif;
         color: #fff;
         padding-left: 15px;
+        &#contact {
+            margin-bottom: 0px;
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
     }
     .logo {
         width: 30%;

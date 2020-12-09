@@ -8,10 +8,12 @@
     z-index: 99;
     top: 0;
     left: 0;
-    background-color: #fff;
+    background-color: $color-grey-back;
     width: 100%;
     height: 100%;
     text-align: center;
+    animation: disapear 5s;
+    animation-fill-mode: forwards;
     h1 {
         position: relative;
         left: 0;
@@ -32,13 +34,12 @@
         transform-origin: center;
         width: 40px;
         will-change: transform;
+        color: #fff;
     }
 }
 
 .home {
     width: 100%;
-    padding: 0;
-    margin: 0;
     color: #fff;
     text-align: center;
     .logo {
@@ -46,34 +47,28 @@
         color: #000;
         font-family: $police-title;
         font-size: 40px;
-        padding: 0;
         margin: auto;
     }
 }
 
 .location {
     @include align-text-center;
-    margin: 0px;
-    padding: 0px;
     h2 {
+        margin: 0px;
+        padding: 0px;
         font: {
             family: $police-text;
             size: 15px;
         }
         background-color: #C7BDBD;
-        margin: 0px;
         padding: 10px 0px 10px;
     }
 }
 
 .pres {
     @include align-text-center;
-    background-color: #e9e9e9;
-    margin: 0px;
-    padding: 0px;
+    background-color: $color-grey-back;
     h1 {
-        padding-top: 20px;
-        padding-bottom: 10px;
         margin: 0px;
     }
     button {
@@ -83,21 +78,15 @@
 
 .guide {
     width: 100%;
-    padding: 0;
-    margin: 0;
     &__title {
         padding-left: 10px;
-    }
-    & ul {
-        padding-inline-start: 0px;
     }
     & li {
         display: flex;
         justify-content: flex-start;
     }
     & h2 {
-        background-color: #e9e9e9;
-        border: 0px;
+        background-color: $color-grey-back;
         border-radius: 20px;
         width: 75%;
         margin: 16px 0px;
@@ -126,21 +115,16 @@
         line-height: 25px;
         font-family: $police-text;
     }
+    & .fa {
+        font-size: 15px;
+    }
     & .fa-mobile {
         font-size: 20px;
-    }
-    & .fa-list-alt {
-        font-size: 15px;
-    }
-    & .fa-building {
-        font-size: 15px;
     }
 }
 
 .restaurants {
     width: 100%;
-    padding: 0px;
-    margin: 0px;
     font-family: $police-text;
     a {
         text-decoration: none;
@@ -155,16 +139,16 @@
         box-shadow: 0px 5px 10px 0px #000;
         border-radius: 15px;
         overflow: hidden;
-        & .__pal {
+        & .pal {
             @include bck-img("../ressources/img/thefull");
         }
-        & .__enchant {
+        & .enchant {
             @include bck-img("../ressources/img/enchanted", 350px);
         }
-        & .__barquette {
+        & .barquette {
             @include bck-img("../ressources/img/barquette");
         }
-        & .__gourmand {
+        & .gourmand {
             @include bck-img("../ressources/img/gourmand");
         }
         & h3 {
@@ -180,7 +164,6 @@
         }
         & p {
             margin: 0px 10px 10px;
-            padding: 0px;
         }
     }
     &__description {
@@ -249,7 +232,7 @@
             margin-left: 1000px;
             h2 {
                 font-size: 30px;
-                color: #e9e9e9;
+                color: $color-grey-back;
                 background: transparent;
                 font-weight: normal;
             }
@@ -284,7 +267,6 @@
             li {
                 height: 200px;
                 width: 200px;
-                padding: 0;
                 text-align: center;
                 display: flex;
                 flex-direction: column;
@@ -294,14 +276,14 @@
                 h2 {
                     margin-top: -15px;
                     font-size: 20px;
-                    background-color: $color-tertiary;
+                    background-color: $color-grey-back;
                 }
             }
         }
     }
     .restaurants {
         text-align: center;
-        background-color: #e9e9e9;
+        background-color: $color-grey-back;
         h1 {
             margin: auto;
             font-size: 40px;
@@ -318,10 +300,10 @@
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-            .__pal {
+            .pal {
                 @include bck-img-desk;
             }
-            .__enchant {
+            .enchant {
                 @include bck-img-desk(-100px)
             }
         }
@@ -329,10 +311,10 @@
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-            .__gourmand {
+            .gourmand {
                 @include bck-img-desk;
             }
-            .__barquette {
+            .barquette {
                 @include bck-img-desk;
             }
         }
@@ -346,7 +328,7 @@
         margin: auto;
         margin-top: 10px;
         margin-bottom: 10px;
-        .__gourmand {
+        .gourmand {
             background-repeat: no-repeat;
             object-fit: contain;
         }
