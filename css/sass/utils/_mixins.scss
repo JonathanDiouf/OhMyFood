@@ -56,9 +56,9 @@
 }
 
 @keyframes disapear {
-    /*80% {
-        opacity: 0.5;
-    }*/
+    50% {
+        opacity: 1;
+    }
     90% {
         opacity: 0;
         display: none;
@@ -74,6 +74,9 @@
 }
 
 @keyframes appear {
+    50% {
+        opacity: 0;
+    }
     90% {
         opacity: 1;
     }
