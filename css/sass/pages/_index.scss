@@ -194,7 +194,8 @@
     }
 }
 
-@media screen and (min-width: 1200px) {
+
+/*@media screen and (min-width: 1200px) {
     body {
         display: flex;
         flex-direction: column;
@@ -219,20 +220,17 @@
     .container {
         width: 100%;
         height: auto;
-        background-image: url(../ressources/img/background-desktop.jpg);
-        background-size: 100%;
-        background-repeat: no-repeat;
         .debutpage {
             display: flex;
             flex-direction: column;
             overflow: hidden;
         }
         .location {
-            background: transparent;
-            margin-left: 1000px;
+            background: #C7BDBD;
+            text-align: center;
             h2 {
                 font-size: 30px;
-                color: $color-grey-back;
+                color: #000;
                 background: transparent;
                 font-weight: normal;
             }
@@ -319,7 +317,7 @@
             }
         }
     }
-}
+}*/
 
 @media screen and (min-width: 800px),
 (max-width: 1200px) {

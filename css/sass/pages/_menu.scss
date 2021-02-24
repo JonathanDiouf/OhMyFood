@@ -66,10 +66,9 @@
     .head {
         margin-left: 10px;
         margin-right: 10px;
-    }
-    .head {
         padding-top: 15px;
         height: 60px;
+        z-index: 100;
         h2 {
             font-family: $police-title;
             font-weight: normal;
@@ -99,6 +98,15 @@
             left: 49px;
             top: 1px;
         }
+    }
+    .first {
+        animation: appear 1s;
+    }
+    .second {
+        animation: appear 2s;
+    }
+    .third {
+        animation: appear 3s;
     }
     .menu {
         width: 100%;
@@ -153,6 +161,13 @@
                 }
             }
             &:active {
+                .text #biggy {
+                    visibility: hidden;
+                }
+                .text #biggy::before {
+                    visibility: visible;
+                    content: "With delicately sliced and...";
+                }
                 overflow: hidden;
                 .price {
                     width: 35%;
@@ -169,6 +184,33 @@
                     }
                 }
             }
+        }
+        .first {
+            animation: appear 0.5s;
+        }
+        .second {
+            animation: appear 1s;
+        }
+        .third {
+            animation: appear 1.5s;
+        }
+        .fourth {
+            animation: appear 2s;
+        }
+        .fifth {
+            animation: appear 2.5s;
+        }
+        .sixth {
+            animation: appear 3s;
+        }
+        .seventh {
+            animation: appear 3.5s;
+        }
+        .eight {
+            animation: appear 4s;
+        }
+        .nine {
+            animation: appear 4.5s;
         }
     }
     .endmenu {
@@ -212,21 +254,24 @@
     .intro .fa-arrow-left::before {
         font-size: 40px;
     }
-    .main .menu article {
-        .price {
-            p {
-                margin-left: 80%;
-            }
-        }
-        &:active {
+    .main {
+        position: absolute;
+        .menu article {
             .price {
-                width: 40%;
-                .box {
-                    width: 100%;
-                    i {
-                        margin-left: 30%;
-                        margin-top: 25%;
-                        line-height: 60px;
+                p {
+                    margin-left: 80%;
+                }
+            }
+            &:active {
+                .price {
+                    width: 40%;
+                    .box {
+                        width: 100%;
+                        i {
+                            margin-left: 30%;
+                            margin-top: 25%;
+                            line-height: 60px;
+                        }
                     }
                 }
             }

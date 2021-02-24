@@ -21,6 +21,7 @@
     background-size: 100%;
     background-position-y: $position-y;
     background-repeat: no-repeat;
+    z-index: -2;
 }
 
 @mixin bck-img-desk($position-y: 0px) {
@@ -39,9 +40,9 @@
     left: -26px;
     opacity: 0;
     transform: scale(1.3);
-    transition: color 1s;
+    transition: color 5s;
     &:hover {
-        color: $color-tertiary;
+        color: green;
         opacity: 1;
     }
 }
@@ -74,6 +75,9 @@
 }
 
 @keyframes appear {
+    0% {
+        opacity: 0;
+    }
     50% {
         opacity: 0;
     }
