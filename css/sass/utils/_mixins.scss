@@ -40,10 +40,16 @@
     left: -26px;
     opacity: 0;
     transform: scale(1.3);
-    transition: color 5s;
-    &:hover {
-        color: green;
+}
+
+@keyframes heart-anim {
+    0% {
+        opacity: 0;
+        color: $color-grey-back;
+    }
+    100% {
         opacity: 1;
+        color: green;
     }
 }
 
@@ -86,5 +92,38 @@
     }
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes hover-plate {
+    0% {
+        opacity: 0;
+        display: block;
+        background-color: aquamarine;
+        width: 100%;
+        text-align: center;
+    }
+    100% {
+        opacity: 1;
+        display: block;
+        background-color: aquamarine;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@keyframes hover-plate-mobile {
+    from {
+        display: block;
+        background-color: aquamarine;
+        width: 100%;
+        text-align: center;
+    }
+    to {
+        opacity: 1;
+        display: block;
+        background-color: aquamarine;
+        width: 100%;
+        text-align: center;
     }
 }

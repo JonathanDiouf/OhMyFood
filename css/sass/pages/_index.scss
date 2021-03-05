@@ -189,6 +189,9 @@
             }
             .fa-heart {
                 @include heart;
+                &:hover {
+                    animation: heart-anim 3s forwards;
+                }
             }
         }
     }
